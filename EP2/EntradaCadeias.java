@@ -24,7 +24,7 @@ public class EntradaCadeias {
 				  
 				  if (n == 0) {
 					  i = Integer.parseInt(linha);
-					  adicionar.clear();
+					  adicionar = new ArrayList<String>();
 				  } else if (n > 0 && n <= i) {
 					  adicionar.add(linha);
 					  if (n == i) {
@@ -36,9 +36,9 @@ public class EntradaCadeias {
 				  n++;
 			  }
 			  
-			  for (int j = 0; j < CadeiasGLC.size(); j++) {
-				  System.out.println(CadeiasGLC.get(j));
-			  }
+//			  for (int j = 0; j < CadeiasGLC.size(); j++) {
+//				  System.out.println(CadeiasGLC.get(j));
+//			  }
 			  
 		} catch (FileNotFoundException e) {
 	        e.printStackTrace();

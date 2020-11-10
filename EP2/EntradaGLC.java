@@ -41,7 +41,7 @@ public class EntradaGLC {
 					  for (int i = 0; i < GLCs.get(GLCs.size()-1).regrasDeSubstituicao.size(); i++) {
 						  if (GLCs.get(GLCs.size()-1).regrasDeSubstituicao.get(i).variavelEsquerda.equals(lendo[0])) {
 							  if (lendo.length > 3) {
-								  GLCs.get(GLCs.size()-1).regrasDeSubstituicao.get(i).variaveisDireita.add(lendo[2].concat(lendo[3]));
+								  GLCs.get(GLCs.size()-1).regrasDeSubstituicao.get(i).variaveisDireita.add(lendo[2].concat(" " + lendo[3]));
 							  } else {
 								  GLCs.get(GLCs.size()-1).regrasDeSubstituicao.get(i).variaveisDireita.add(lendo[2]);
 							  }
@@ -53,13 +53,13 @@ public class EntradaGLC {
 				  n++;
 			  }
 			  
-			  for (int i = 0; i < GLCs.size(); i++) {
-				  System.out.println(GLCs.get(i).numVariaveis + " " + GLCs.get(i).numSimbolosTerminais + " " + GLCs.get(i).numRegrasDeSubstituicao);
-				  System.out.println(GLCs.get(i).terminais);
-				  for (int j = 0; j < GLCs.get(i).regrasDeSubstituicao.size(); j++) {
-					  System.out.println(GLCs.get(i).regrasDeSubstituicao.get(j).variavelEsquerda + " => " + GLCs.get(i).regrasDeSubstituicao.get(j).variaveisDireita);
-				  }
-			  }
+//			  for (int i = 0; i < GLCs.size(); i++) {
+//				  System.out.println(GLCs.get(i).numVariaveis + " " + GLCs.get(i).numSimbolosTerminais + " " + GLCs.get(i).numRegrasDeSubstituicao);
+//				  System.out.println(GLCs.get(i).terminais);
+//				  for (int j = 0; j < GLCs.get(i).regrasDeSubstituicao.size(); j++) {
+//					  System.out.println(GLCs.get(i).regrasDeSubstituicao.get(j).variavelEsquerda + " => " + GLCs.get(i).regrasDeSubstituicao.get(j).variaveisDireita);
+//				  }
+//			  }
 			  
 		} catch (FileNotFoundException e) {
 	        e.printStackTrace();
