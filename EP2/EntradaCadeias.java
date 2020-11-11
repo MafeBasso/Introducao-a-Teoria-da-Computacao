@@ -36,10 +36,6 @@ public class EntradaCadeias {
 				  n++;
 			  }
 			  
-//			  for (int j = 0; j < CadeiasGLC.size(); j++) {
-//				  System.out.println(CadeiasGLC.get(j));
-//			  }
-			  
 		} catch (FileNotFoundException e) {
 	        e.printStackTrace();
 	    } catch (IOException e) {

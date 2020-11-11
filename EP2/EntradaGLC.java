@@ -3,7 +3,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class EntradaGLC {
@@ -53,14 +52,6 @@ public class EntradaGLC {
 				  
 				  n++;
 			  }
-			  
-//			  for (int i = 0; i < GLCs.size(); i++) {
-//				  System.out.println(GLCs.get(i).numVariaveis + " " + GLCs.get(i).numSimbolosTerminais + " " + GLCs.get(i).numRegrasDeSubstituicao);
-//				  System.out.println(GLCs.get(i).terminais);
-//				  for (int j = 0; j < GLCs.get(i).regrasDeSubstituicao.size(); j++) {
-//					  System.out.println(GLCs.get(i).regrasDeSubstituicao.get(j).variavelEsquerda + " => " + GLCs.get(i).regrasDeSubstituicao.get(j).variaveisDireita);
-//				  }
-//			  }
 			  
 		} catch (FileNotFoundException e) {
 	        e.printStackTrace();
