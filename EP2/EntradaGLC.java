@@ -28,6 +28,7 @@ public class EntradaGLC {
 					  glc.numRegrasDeSubstituicao = Integer.parseInt(lendo[2]);
 					  GLCs.add(glc);
 				  } else if (n == 2) {
+					  GLCs.get(GLCs.size()-1).inicial = lendo[0];
 					  for (int i = 0; i < lendo.length; i++) {
 						  Substituicao subst = new Substituicao();
 						  subst.variavelEsquerda = lendo[i];

@@ -53,8 +53,8 @@ public class glc {
 					
 					for (int l = 1; l < cadeiaSeparada.length; l++) {
 						for (int i = 0; i < cadeiaSeparada.length-l+1; i++) {
-							int j = i+l-2;
-							for (int k = i; k < j-1; k++) {
+							int j = i+l-1;
+							for (int k = i; k < cadeiaSeparada.length-1; k++) {
 								for (int cont4 = 0; cont4 < GLCs.get(cont1).regrasDeSubstituicao.size(); cont4++) {
 									
 									int int1 = 0;
@@ -64,6 +64,7 @@ public class glc {
 									for (int cont5 = 0; cont5 < abacate.size(); cont5++) {
 										String[] var = abacate.get(cont5).split(" ");
 										for (int cont6 = 0; cont6 < var.length; cont6++) {
+											System.out.println(var[cont6] + " " + matriz[i][k] + " " + i + " " + j + " " + k);
 											if (matriz[i][k].contains(var[cont6])) {
 												int1 = 1;
 											}
@@ -84,7 +85,7 @@ public class glc {
 						}
 					}
 					
-					if (matriz[0][cadeiaSeparada.length-1].contains(GLCs.get(cont1).regrasDeSubstituicao.get(0).variavelEsquerda)) {
+					if (matriz[0][cadeiaSeparada.length-1].contains(GLCs.get(cont1).inicial)) {
 						AceitacoesERejeicoesDaGLC.add(1);
 					} else AceitacoesERejeicoesDaGLC.add(0);
 					
