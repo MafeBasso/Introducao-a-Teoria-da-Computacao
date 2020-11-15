@@ -37,7 +37,8 @@ public class CYK {
 							//ver se a variavel gera o Wi (W = cadeia, i = posicao)
 							if (GLCs.get(cont1).regrasDeSubstituicao.get(cont3).variaveisDireita.contains(cadeiaSeparada[i-1])) {
 								//se sim coloca na tabela(i,i)
-								matriz[i][i] = GLCs.get(cont1).regrasDeSubstituicao.get(cont3).variavelEsquerda;
+								if (matriz[i][i] != "-1") matriz[i][i] = matriz[i][i].concat(" " + GLCs.get(cont1).regrasDeSubstituicao.get(cont3).variavelEsquerda);
+								else matriz[i][i] = GLCs.get(cont1).regrasDeSubstituicao.get(cont3).variavelEsquerda;
 							}
 						}
 						
