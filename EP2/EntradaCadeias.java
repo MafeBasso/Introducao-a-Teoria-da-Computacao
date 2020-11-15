@@ -6,6 +6,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/* EP2 - Introdução a teoria da computação
+ * 
+ * Trabalho desenvolvido por:
+ *
+ * - Larissa Fabião da Fonseca - 11208367
+ * - Maria Fernanda Basso Santos - 11208197
+ *
+ * */
+
 public class EntradaCadeias {
 	public static void lerEInserirDados (List<List<String>> CadeiasGLC, String args) {
 		File arquivoTXT = new File(args);

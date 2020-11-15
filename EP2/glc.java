@@ -6,7 +6,7 @@ import java.util.List;
  * Trabalho desenvolvido por:
  *
  * - Larissa Fabião da Fonseca - 11208367
- * - Maria Fernanda Basso - 11208197
+ * - Maria Fernanda Basso Santos - 11208197
  *
  * */
 

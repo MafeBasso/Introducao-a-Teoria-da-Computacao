@@ -6,7 +6,7 @@ import java.util.List;
  * Trabalho desenvolvido por:
  *
  * - Larissa Fabião da Fonseca - 11208367
- * - Maria Fernanda Basso - 11208197
+ * - Maria Fernanda Basso Santos - 11208197
  *
  * */
 
@@ -67,8 +67,6 @@ public class CYK {
 								
 								for (int cont4 = 0; cont4 < GLCs.get(cont1).regrasDeSubstituicao.size(); cont4++) {
 									
-									int vericacaoVar1 = 0;
-									int vericacaoVar2 = 0;
 									List<String> varsDireita = new ArrayList<String>();
 									varsDireita = GLCs.get(cont1).regrasDeSubstituicao.get(cont4).variaveisDireita;
 
@@ -76,22 +74,12 @@ public class CYK {
 									for (int cont5 = 0; cont5 < varsDireita.size(); cont5++) {
 										
 										String[] var = varsDireita.get(cont5).split(" ");
-										for (int cont6 = 0; cont6 < var.length; cont6++) {
-											if (matriz[i][k].contains(var[cont6])) {
-												vericacaoVar1 = 1;
-												//se tabela(i,k) contem B  E  tabela(k+1,j) contem C ENTÃO colocamos A na tabela(i,j)
-												if (vericacaoVar1 == 1 && vericacaoVar2 == 1) {
-													if (matriz[i][j] != "-1") matriz[i][j] = matriz[i][j].concat(" " + GLCs.get(cont1).regrasDeSubstituicao.get(cont4).variavelEsquerda);
-													else matriz[i][j] = GLCs.get(cont1).regrasDeSubstituicao.get(cont4).variavelEsquerda;
-												}
-											}
-											if (matriz[k+1][j].contains(var[cont6])) {
-												vericacaoVar2 = 1;
-												//se tabela(i,k) contem B  E  tabela(k+1,j) contem C ENTÃO colocamos A na tabela(i,j)
-												if (vericacaoVar1 == 1 && vericacaoVar2 == 1) {
-													if (matriz[i][j] != "-1") matriz[i][j] = matriz[i][j].concat(" " + GLCs.get(cont1).regrasDeSubstituicao.get(cont4).variavelEsquerda);
-													else matriz[i][j] = GLCs.get(cont1).regrasDeSubstituicao.get(cont4).variavelEsquerda;
-												}
+										//verificando que é A => BC e não A => a (terminal)
+										if (var.length == 2) {
+											//se tabela(i,k) contem B  E  tabela(k+1,j) contem C ENTÃO colocamos A na tabela(i,j)
+											if (matriz[i][k].contains(var[0]) && matriz[k+1][j].contains(var[1])) {
+												if (matriz[i][j] != "-1") matriz[i][j] = matriz[i][j].concat(" " + GLCs.get(cont1).regrasDeSubstituicao.get(cont4).variavelEsquerda);
+												else matriz[i][j] = GLCs.get(cont1).regrasDeSubstituicao.get(cont4).variavelEsquerda;
 											}
 										}
 										
