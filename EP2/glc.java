@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/* EP2 - Introdução a teoria da computação
+/* EP2 - Introdução à Teoria da Computação
  * 
  * Trabalho desenvolvido por:
  *
