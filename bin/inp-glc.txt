@@ -1,4 +1,4 @@
-4
+2
 6 2 15
 S0 S T U A B
 a b
@@ -23,24 +23,3 @@ S1 A B
 S1 => A B
 A => 0
 B => 1
-4 2 8
-S A B C
-a b
-S => A B
-S => B C
-A => B A
-A => a
-B => C C
-B => b
-C => A B
-C => a 
-4 2 7
-S A F C
-a b
-S => S F
-S => a
-A => C C
-A => S S
-A => C S
-C => b
-F => A S

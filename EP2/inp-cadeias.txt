@@ -6,3 +6,11 @@ a b a a b b
 &
 0 1
 0 0 1
+3
+&
+b a a b a
+b a a b b
+3
+&
+a b b a b b b
+a b b a b b a

@@ -1,0 +1,12 @@
+####### EP2 - Introdução a teoria da computação #######
+Larissa Fabião da Fonseca - 11208367
+Maria Fernanda Basso - 11208197
+
+Para executar o código com a resolução do exercício proposto, os seguintes passos devem ser seguidos:
+
+1- Utilizando o terminal de preferencia, navegue até o diretório denominado EP2
+2- Dentro do diretório execute o comando a seguir para compilar os arquivos java:
+	javac *.java
+3- Para executar o código, execute o seguinte comando ainda dentro do diretório EP2
+	java glc inp-glc.txt inp-cadeias.txt out-status.txt
+

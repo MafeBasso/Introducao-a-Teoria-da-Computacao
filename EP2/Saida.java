@@ -5,6 +5,15 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
+/* EP2 - Introdução a teoria da computação
+ * 
+ * Trabalho desenvolvido por:
+ *
+ * - Larissa Fabião da Fonseca - 11208367
+ * - Maria Fernanda Basso - 11208197
+ *
+ * */
+
 public class Saida {
 	public static void imprimir(List<List<Integer>> saida, String args) {
 		File destino = new File(args);

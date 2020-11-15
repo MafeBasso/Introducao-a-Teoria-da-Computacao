@@ -1,6 +1,15 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/* EP2 - Introdução a teoria da computação
+ * 
+ * Trabalho desenvolvido por:
+ *
+ * - Larissa Fabião da Fonseca - 11208367
+ * - Maria Fernanda Basso - 11208197
+ *
+ * */
+
 public class CYK {
 
 	public static void verificarAceitacoesERejeicoes (List<InfoGLC> GLCs, List<List<String>> CadeiasGLC, List<List<Integer>> AceitacoesERejeicoesDasGLCs) {

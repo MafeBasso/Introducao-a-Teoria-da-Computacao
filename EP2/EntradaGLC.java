@@ -5,6 +5,15 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
+/* EP2 - Introdução a teoria da computação
+ * 
+ * Trabalho desenvolvido por:
+ *
+ * - Larissa Fabião da Fonseca - 11208367
+ * - Maria Fernanda Basso - 11208197
+ *
+ * */
+
 public class EntradaGLC {
 	public static void lerEInserirDados (List<InfoGLC> GLCs, String args) {
 		File arquivoTXT = new File(args);
